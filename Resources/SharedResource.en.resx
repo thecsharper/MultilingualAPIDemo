@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Article1_Description" xml:space="preserve">
-    <value>1</value>
+    <value>A feature-packed smartphone with a stunning display.</value>
   </data>
   <data name="Article1_Name" xml:space="preserve">
-    <value>1</value>
+    <value>Laptop</value>
     <comment>This is a comment</comment>
   </data>
   <data name="Article2_Description" xml:space="preserve">
-    <value>1</value>
+    <value>A feature-packed smartphone with a stunning display.</value>
   </data>
   <data name="Article2_Name" xml:space="preserve">
-    <value>1</value>
+    <value>Smartphone</value>
   </data>
 </root>
