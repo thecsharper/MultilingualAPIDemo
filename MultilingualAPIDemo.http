@@ -1,6 +1,7 @@
 @MultilingualAPIDemo_HostAddress = http://localhost:5236
 
-GET {{MultilingualAPIDemo_HostAddress}}/weatherforecast/
+GET {{MultilingualAPIDemo_HostAddress}}/articles/1?culture=de
 Accept: application/json
+Accept-Language: de
 
 ###

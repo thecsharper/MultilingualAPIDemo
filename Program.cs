@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Localization;
-using Microsoft.Extensions.Configuration.UserSecrets;
 using MultilingualAPIDemo.Locale;
 using MultilingualAPIDemo.Models;
 using System.Globalization;
@@ -34,7 +33,6 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     ];
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -51,7 +49,8 @@ app.MapGet("/test", () =>
 })
 .WithName("Test");
 
-app.MapGet("/articles/{id}", (int id, IResourceLocalizer resourceLocalizer) => {
+app.MapGet("/articles/{id}", (int id, IResourceLocalizer resourceLocalizer) =>
+{
     var article = DataHelper.GetArticles().FirstOrDefault(a => a.Id == id);
     if (article == null)
     {
