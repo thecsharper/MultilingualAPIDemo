@@ -43,12 +43,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/test", () =>
-{
-    return "Test";
-})
-.WithName("Test");
-
 app.MapGet("/articles/{id}", (int id, IResourceLocalizer resourceLocalizer) =>
 {
     var article = DataHelper.GetArticles().FirstOrDefault(a => a.Id == id);
